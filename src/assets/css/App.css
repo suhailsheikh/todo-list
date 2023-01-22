@@ -1,0 +1,105 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-form {
+  display: flex;
+}
+
+/* Tabs */
+.tabs {
+  width: 100%;
+  margin-top: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 250px;
+  height: 52px;
+  border-bottom: 4px solid transparent; /* Also prevents the content from jumping */
+  text-align: center;
+}
+
+.active-tab {
+  border-bottom: 4px solid dodgerblue;
+  transition: .2s all ease-in-out;
+}
+
+.confirmation-message {
+  font-size: 22px;
+  font-weight: 600;
+  color: green;
+  text-align: center;
+}
+
+/* Tab Content */
+
+.tab-content {
+  display: inline-flex;
+  margin-top: 30px;
+  width: 100%;
+  transition: .2s all ease-in-out;
+}
+
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+  width: 100%;
+  transition: .2s all ease-in-out;
+}
+
+/* Todo Item */
+
+.todo-item {
+  background: #3f5efb;
+  color: white;
+  padding: 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 5px 45px 5px rgba(0, 0, 0, 0.13);
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .2s ease;
+}
+
+.todo-item-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Font Awesome Icons */
+
+.fa-layers {
+  color: black;
+}
+
+.fa-layers:hover {
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.checkmark:hover {
+  color: green;
+}
+
+.trash:hover {
+  color: red;
+}
